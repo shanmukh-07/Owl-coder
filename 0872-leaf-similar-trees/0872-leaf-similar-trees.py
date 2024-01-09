@@ -7,9 +7,11 @@
 class Solution:
     def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
         def fun(node):
+            l = []
             if node:
                 if not node.left and not node.right:
-                    yield node.val
-                yield from fun(node.right)
-                yield from fun(node.left)
-        return list(fun(root1)) == list(fun(root2))
+                    l.append(node.val)
+                l += fun(node.right)
+                l += fun(node.left)
+            return l
+        return fun(root1) == fun(root2)
