@@ -14,10 +14,9 @@ class Solution:
         l = []
         while i <= j:
             if fun(i) and fun(j):
-                l.append((i,j))
+                return i,j
             i+=1
             j-=1
-        return l[0]
 
 
 #{ 
