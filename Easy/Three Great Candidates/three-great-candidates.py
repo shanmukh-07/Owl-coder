@@ -3,7 +3,6 @@
 class Solution:
     def maxProduct(self, arr, n):
         arr.sort()
-        p,pp = 1,1
         p = arr[0]*arr[1]*arr[n-1]
         pp = arr[n-1]*arr[n-2]*arr[n-3]
         return max(p,pp)
