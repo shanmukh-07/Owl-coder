@@ -3,17 +3,31 @@
 class Solution:
     ##Complete this function
     def searchInSorted(self,arr, N, K):
-        l = 0
-        h = N-1
-        while l<=h:
+        # l = 0
+        # h = N-1
+        # while l<=h:
+        #     m = (l+h)//2
+        #     if arr[m] == K:
+        #         return 1
+        #     elif K>arr[m]:
+        #         l = m+1
+        #     else:
+        #         h = m-1
+        # return -1
+        def fun(arr,l,h,t):
+            if l>h:return -1
             m = (l+h)//2
-            if arr[m] == K:
+            if arr[m] == t:
                 return 1
-            elif K>arr[m]:
-                l = m+1
+            elif t>arr[m]:
+                return fun(arr,m+1,h,t)
             else:
-                h = m-1
-        return -1
+                return fun(arr,l,m-1,t)
+        return fun(arr,0,N-1,K)
+            
+
+
+
 
 
 #{ 
