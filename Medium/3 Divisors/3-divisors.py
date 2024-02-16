@@ -3,7 +3,6 @@
 
 class Solution:
 	def threeDivisors(self, query, q):
-# 		l = []
 		def fun(n):
 		    if n<2:return False
 		    for i in range(2,int(n**0.5)+1):
@@ -11,14 +10,11 @@ class Solution:
 		            return False
 		    return True
         
-# 		for i in range(2,10**6+1):
-# 		    if fun(i):
-# 		        l.append(i)
         l = []
         for i in query:
             c = 0
             for j in range(2,int(i**0.5)+1):
-                if fun(j) and j**2 <= i:
+                if fun(j):
                     c += 1
             l.append(c)
         return l
