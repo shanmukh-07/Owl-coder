@@ -1,4 +1,4 @@
-<h2><a href="https://www.geeksforgeeks.org/problems/need-some-change/1?page=7&difficulty=Easy&status=unsolved&sortBy=submissions">Swap the array elements</a></h2><h3>Difficulty Level : Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given an array <strong>arr&nbsp;</strong>of <strong>n&nbsp;</strong>positive integers. The task is to swap every <strong>i<sup>th</sup></strong> element of the array with <strong>(i+2)</strong><sup>th</sup> element.</span></p>
+<h2><a href="https://www.geeksforgeeks.org/problems/need-some-change/1">Swap the array elements</a></h2><h3>Difficulty Level : Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given an array <strong>arr&nbsp;</strong>of <strong>n&nbsp;</strong>positive integers. The task is to swap every <strong>i<sup>th</sup></strong> element of the array with <strong>(i+2)</strong><sup>th</sup> element.</span></p>
 <p><span style="font-size: 18px;"><strong>Example 1:</strong></span></p>
 <pre><span style="font-size: 18px;"><strong>Input:</strong>
 n = 3
