@@ -10,12 +10,13 @@ class Solution:
 		        if matrix[i][j] == 0:
 		            if i > 0 and matrix[i-1][j] == 1:
 		                c += 1
+		            if i < m-1 and matrix[i+1][j] == 1:
+		                c += 1
 		            if j > 0 and matrix[i][j-1] == 1:
 		                c += 1
 		            if j < n-1 and matrix[i][j+1] == 1:
 		                c += 1
-		            if i < m-1 and matrix[i+1][j] == 1:
-		                c += 1
+		            
 	    return c
 		                
 
